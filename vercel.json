@@ -1,0 +1,12 @@
+{
+    "public": false,
+    "rewrites": [
+        {
+            "source": "/(.*)",
+            "destination": "/"
+        }
+    ],
+    "github": {
+        "silent": true
+    }
+}
