@@ -22,7 +22,7 @@ function getCategory() {
 <template>
     <div class="h-screen flex flex-col gap-2 justify-center items-center">
         <h1 class="text-neutral-100 text-lg font-semibold">
-            Εισαγάγετε την κατηγορία της πινακίδας του οχήματος
+            Εισαγάγετε το πρόθεμα της πινακίδας του οχήματος
         </h1>
 
         <input
