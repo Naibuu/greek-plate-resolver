@@ -20,7 +20,7 @@ function getCategory() {
 </script>
 
 <template>
-    <div class="h-screen flex flex-col gap-2 justify-center items-center">
+    <div class="h-screen flex flex-col gap-2 justify-center items-center text-center">
         <h1 class="text-neutral-100 text-lg font-semibold">
             Εισαγάγετε το πρόθεμα της πινακίδας του οχήματος
         </h1>
