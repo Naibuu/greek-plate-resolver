@@ -1,5 +1,10 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { SpeedInsights } from '@vercel/speed-insights/vue'
+</script>
 
-<template><h1 class="text-3xl font-bold underline">Hello world!</h1></template>
-
-<style scoped></style>
+<template>
+    <main>
+        <RouterView />
+    </main>
+    <SpeedInsights />
+</template>

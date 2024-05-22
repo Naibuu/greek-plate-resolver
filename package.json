@@ -10,8 +10,10 @@
         "format": "prettier --write ."
     },
     "dependencies": {
+        "@vercel/speed-insights": "^1.0.10",
         "prettier": "^3.2.5",
-        "vue": "^3.4.21"
+        "vue": "^3.4.21",
+        "vue-router": "4"
     },
     "devDependencies": {
         "@vitejs/plugin-vue": "^5.0.4",
