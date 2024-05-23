@@ -41,9 +41,5 @@ function getLocation() {
         >
             <p v-html="result" />
         </div>
-
-        <RouterLink class="text-xs underline opacity-60" to="/category"
-            >Για κατηγορίες</RouterLink
-        >
     </div>
 </template>
