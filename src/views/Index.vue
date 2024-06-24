@@ -19,6 +19,10 @@ function getLocation() {
         result.value = ''
     }
 }
+
+function getEasterEgg() {
+    return code.value.toUpperCase().includes('US')
+}
 </script>
 
 <template>
@@ -29,14 +33,24 @@ function getLocation() {
             🗺️ Εισαγάγετε το πρόθεμα της πινακίδας του οχήματος
         </h1>
 
-        <input
-            type="text"
-            class="p-2 bg-transparent border-b-2 border-b-neutral-600 outline-none text-neutral-300 placeholder:text-neutral-400"
-            v-model="code"
-            placeholder="π.χ ΜΙ, ΙΖ, ΚΥ"
-            maxlength="2"
-            @input="getLocation"
-        />
+        <div
+            class="relative overflow-hidden flex justify-center items-center bg-white border-4 border-gray-950 rounded-xl"
+        >
+            <img
+                :src="`/img/${getEasterEgg() ? 'cursed_badge' : 'badge'}.png`"
+                width="52"
+                draggable="false"
+            />
+
+            <input
+                type="text"
+                class="size-full max-w-[220px] bg-transparent outline-none text-center text-gray-950 font-black text-2xl placeholder:text-neutral-400"
+                v-model="code"
+                placeholder="π.χ ΜΙ, ΙΖ, ΚΥ"
+                maxlength="2"
+                @input="getLocation"
+            />
+        </div>
 
         <div
             v-if="result"
